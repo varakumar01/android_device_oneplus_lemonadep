@@ -31,7 +31,16 @@
              </string-array>
     -->
     <string-array name="config_additionalVideoConfigurations">
-        <item>0</item> <item>sd|hd|fhd|uhd</item> <item>60|120</item>
+        <!-- 120 removed: Aperture has no CONSTRAINED_HIGH_SPEED session path
+             (nothing in packages/apps/Aperture opens one), so selecting a
+             framerate here just sets a fixed CONTROL_AE_TARGET_FPS_RANGE on
+             a normal session (ext/CaptureRequestOptionsBuilder.kt). A fixed
+             [120,120] range clamps exposure to 8.33ms or less, which bands
+             under 50 Hz mains lighting: that is the reported flicker.
+             "-120" marks it explicitly removed rather than merely omitted,
+             in case the camera's own supportedFrameRateRanges already
+             reports a fixed 120 entry. -->
+        <item>0</item> <item>sd|hd|fhd|uhd</item> <item>60|-120</item>
         <item>1</item> <item>sd|hd|fhd</item>     <item>60</item>
         <item>2</item> <item>sd|hd|fhd|uhd</item> <item>60</item>
     </string-array>
