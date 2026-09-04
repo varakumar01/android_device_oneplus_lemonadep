@@ -51,6 +51,11 @@ $(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class
 # features, which default off and cause zero crashes).
 $(call soong_config_set_bool,OPLUS_LINEAGE_LIVEDISPLAY_HAL,ENABLE_PA,false)
 
+# bionic: force composer/hwc/gralloc HAL binaries onto Scudo instead of the
+# jemalloc carve-out bionic/libc/Android.bp's display_jemalloc_defaults grants
+# them by default (should_use_jemalloc_for_display() in malloc_common.cpp).
+$(call soong_config_set,BIONIC,use_jemalloc_for_display_stack,false)
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc-service.nxp \
