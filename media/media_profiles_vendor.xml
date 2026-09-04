@@ -1618,17 +1618,17 @@
         minBitRate="64000" maxBitRate="160000000"
         minFrameWidth="176" maxFrameWidth="7680"
         minFrameHeight="144" maxFrameHeight="4320"
-        minFrameRate="15" maxFrameRate="30"
+        minFrameRate="15" maxFrameRate="60"
         maxHFRFrameWidth="1920" maxHFRFrameHeight="1080"
-        maxHFRMode="120"  />
+        maxHFRMode="240"  />
 
     <VideoEncoderCap name="hevc" enabled="true"
         minBitRate="64000" maxBitRate="160000000"
         minFrameWidth="176" maxFrameWidth="7680"
         minFrameHeight="144" maxFrameHeight="4320"
-        minFrameRate="15" maxFrameRate="30"
-        maxHFRFrameWidth="0" maxHFRFrameHeight="0"
-        maxHFRMode="0"  />
+        minFrameRate="15" maxFrameRate="60"
+        maxHFRFrameWidth="1920" maxHFRFrameHeight="1080"
+        maxHFRMode="240"  />
 
     <AudioEncoderCap name="aac" enabled="true"
         minBitRate="8000" maxBitRate="96000"
