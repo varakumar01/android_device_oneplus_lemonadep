@@ -39,6 +39,18 @@ PRODUCT_COPY_FILES += \
 # Lineage Health
 $(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/oplus_chg/battery/chg_enable)
 
+# LiveDisplay: PictureAdjustment defaults to ON in hardware/oplus's
+# vendor.lineage.livedisplay-service.oplus (see aidl/livedisplay/README.md), but
+# on this device its backend is vendor.lineage.livedisplay::sdm::PictureAdjustment
+# (SDMController -> SDM/DPPS ColorManager), which answers every call with
+# "Client: 2 is not active" / UNSUPPORTED_OPERATION. LiveDisplayService's boot-phase
+# PictureAdjustmentController doesn't catch that, so it throws all the way up to a
+# FATAL EXCEPTION IN SYSTEM PROCESS and kills system_server -- the display "break
+# loop". Disabling it here removes the AIDL registration entirely, which
+# LineageHardwareManager already handles gracefully (same as the AB/AF/DM
+# features, which default off and cause zero crashes).
+$(call soong_config_set_bool,OPLUS_LINEAGE_LIVEDISPLAY_HAL,ENABLE_PA,false)
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc-service.nxp \
