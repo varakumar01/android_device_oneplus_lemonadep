@@ -97,6 +97,11 @@ TARGET_INCLUDE_PARTNER_SETUP := true
 TARGET_INCLUDE_GOOGLE_TELECOMM := true
 TARGET_NEEDS_VULKAN_MEDIA_FIX := true
 
+# Convert double-tap-to-wake into an AOD pulse instead of a full wake.
+# config_supportDoubleTapWake is already true for this device (see
+# device/oneplus/sm8350-common's OPlusFrameworksResCommon overlay).
+TARGET_DOZE_DOUBLE_TAP_PULSE_SUPPORTED := true
+
 ifeq ($(TARGET_BUILD_VARIANT),eng)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.adb.secure=0 \
