@@ -74,6 +74,28 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Axion OS Custom Flags
+TARGET_DISABLE_EPPE := true
+AXION_CAMERA_REAR_INFO := 50,48,8,2
+AXION_CAMERA_FRONT_INFO := 16
+BYPASS_CHARGE_SUPPORTED ?= true
+AXION_MAINTAINER := Tony01
+AXION_PROCESSOR := Qualcomm®_Snapdragon™_888
+TARGET_INCLUDE_PARTNER_SETUP := true
+TARGET_INCLUDE_GOOGLE_TELECOMM := true
+TARGET_NEEDS_VULKAN_MEDIA_FIX := true
+
+ifeq ($(TARGET_BUILD_VARIANT),eng)
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.adb.secure=0 \
+    ro.adb.secure.mandatory=0 \
+    persist.sys.usb.config=adb \
+    persist.sys.ax_debug_enabled=1
+endif
+
+# inherit product configs
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
 # Inherit from the common OEM chipset makefile.
 $(call inherit-product, device/oneplus/sm8350-common/common.mk)
 
