@@ -729,7 +729,10 @@ odm/lib64/libFilterWrapper.so
 odm/lib64/libPerfectColor.so
 odm/lib64/libRedeyeReduce.so
 odm/lib64/libSuperRaw.so
+odm/lib64/libSuperTextWrapper.so
 odm/lib64/libTrafficMode.so
+odm/lib64/libXDocProcessSDK.so
+odm/lib64/libYTCommon.so
 odm/lib64/libaisd.so
 odm/lib64/libaiseg.so
 odm/lib64/libalCFR.so
