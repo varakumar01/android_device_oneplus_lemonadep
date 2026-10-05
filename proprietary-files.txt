@@ -23,9 +23,9 @@ odm/lib/rfsa/adsp/libVDHexagonBlurless_v2_skel.so
 odm/lib/rfsa/adsp/libarc_gk_pt_hvx_skel.so
 odm/lib/rfsa/adsp/libarcsoft_dualcam_refocus_skel.so
 odm/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_skel.so
-odm/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_skel_lemonade.so;FIX_SONAME
+odm/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_skel_lemonade.so
 odm/lib/rfsa/adsp/libarcsoft_portraitSN_hvx_skel.so
-odm/lib/rfsa/adsp/libarcsoft_portraitsn_hvx_skel_20031.so;FIX_SONAME
+odm/lib/rfsa/adsp/libarcsoft_portraitsn_hvx_skel_20031.so
 odm/lib/rfsa/adsp/libcalculator_domains_skel.so
 odm/lib/rfsa/adsp/libcalculator_skel.so
 odm/lib/rfsa/adsp/libdehaze_skel.so
