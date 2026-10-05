@@ -628,6 +628,7 @@ odm/lib64/libPreviewDecisionOld.so
 odm/lib64/libQnnHtpStub.so
 odm/lib64/libSNPE.so
 odm/lib64/libSNPE_G.so
+odm/lib64/libui.so:odm/lib64/libui-oplus.so
 odm/lib64/libVDBayerHDR.so
 odm/lib64/libVDBlurless.so;FIX_SONAME
 odm/lib64/libVDDualCameraBlurlessAPI.so
