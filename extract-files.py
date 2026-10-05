@@ -87,6 +87,8 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('rpcmem_to_fd'),
     'odm/lib64/libAlgoProcess.so': blob_fixup()
         .replace_needed('android.hardware.graphics.common-V1-ndk_platform.so', 'android.hardware.graphics.common-V7-ndk.so'),
+    'odm/lib64/vendor.oplus.hardware.urcc-V1-ndk_platform.so': blob_fixup()
+        .add_needed('libjsoncpp_shim.so'),
     'odm/lib64/libOGLManager.so': blob_fixup()
         .clear_symbol_version('AHardwareBuffer_allocate')
         .clear_symbol_version('AHardwareBuffer_describe')

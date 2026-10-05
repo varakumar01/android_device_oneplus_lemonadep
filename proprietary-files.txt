@@ -920,6 +920,16 @@ odm/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so
 odm/lib64/vendor.qti.esepowermanager@1.0.so
 odm/lib64/vendor.qti.esepowermanager@1.1.so
 
+# URCC / UAH
+odm/bin/hw/vendor.oplus.hardware.urcc-service
+odm/etc/init/vendor.oplus.hardware.urcc-service.rc
+odm/etc/uah/uahconfig.pb
+odm/etc/vintf/manifest/vendor.oplus.hardware.urcc-service.xml
+odm/lib64/liboplus-uah-client.so
+odm/lib64/libuahcore.so
+odm/lib64/liburcccore.so
+odm/lib64/vendor.oplus.hardware.urcc-V1-ndk_platform.so
+
 # Fingerprint
 odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service
 odm/bin/init.oplus.fingerprints.sh
