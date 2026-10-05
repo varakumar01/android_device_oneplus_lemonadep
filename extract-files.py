@@ -95,6 +95,8 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('AHardwareBuffer_lock')
         .clear_symbol_version('AHardwareBuffer_release')
         .clear_symbol_version('AHardwareBuffer_unlock'),
+    'odm/lib64/libnightvision.so': blob_fixup()
+        .sig_replace('F9 0F 1F 32 FA 03 18 32 7B E6 E7 F2', 'F90F1F323A2080527BE6E7F2'),
     'odm/lib64/libui-oplus.so': blob_fixup()
         .fix_soname()
         .replace_needed('android.hardware.graphics.common-V1-ndk_platform.so', 'android.hardware.graphics.common-V7-ndk.so'),
