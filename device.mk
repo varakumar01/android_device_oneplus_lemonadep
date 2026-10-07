@@ -116,7 +116,7 @@ TARGET_NEEDS_VULKAN_MEDIA_FIX := true
 # device/oneplus/sm8350-common's OPlusFrameworksResCommon overlay).
 TARGET_DOZE_DOUBLE_TAP_PULSE_SUPPORTED := true
 
-ifeq ($(TARGET_BUILD_VARIANT),eng)
+ifneq ($(TARGET_BUILD_VARIANT),user)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.adb.secure=0 \
     ro.adb.secure.mandatory=0 \
