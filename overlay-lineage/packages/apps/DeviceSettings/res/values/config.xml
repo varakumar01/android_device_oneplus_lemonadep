@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+
+    <!-- The amb670yf01 panel is driven through a Pixelworks Iris5 chip. -->
+    <bool name="config_irisMemcSupported">true</bool>
+
+</resources>
