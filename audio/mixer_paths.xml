@@ -4428,6 +4428,10 @@
     <path name="hifi-playback handset">
         <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia2" value="1" />
     </path>
+
+    <path name="hifi-playback bt-a2dp">
+        <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia2" value="1" />
+    </path>
     <path name="hifi-record">
         <ctl name="MultiMedia2 Mixer TX_CDC_DMA_TX_3" value="1" />
     </path>
