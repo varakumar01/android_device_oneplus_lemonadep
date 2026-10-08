@@ -572,10 +572,6 @@ odm/etc/init/calibrationOutput_uw.rc
 odm/etc/init/calibrationOutput_uw_686.rc
 odm/etc/init/calibrationOutput_wt.rc
 odm/etc/vintf/manifest/manifest_oplus_cameraextension_aidl.xml
-odm/lib/libDeVIS.so
-odm/lib/libdehaze.so
-odm/lib/libfastov_dsp.so
-odm/lib/libnightvision.so;FIX_SONAME
 odm/lib64/camera/components/com.arcsoft.node.eisv2.so
 odm/lib64/camera/components/com.arcsoft.node.smooth_transition.so
 odm/lib64/camera/components/com.oplus.node.preview.so
@@ -840,7 +836,6 @@ vendor/lib64/libbitmlengine.so
 vendor/lib64/libbitmlenginev2.so
 vendor/lib64/libcamera_nn_stub.so
 vendor/lib64/libcamerapostproc.so
-vendor/lib/libcamxexternalformatutils.so
 vendor/lib64/libcamxexternalformatutils.so
 vendor/lib64/libcamxfacialfeatures.so
 vendor/lib64/libcamxfdalgo.so
