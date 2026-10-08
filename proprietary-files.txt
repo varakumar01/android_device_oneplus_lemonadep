@@ -54,8 +54,8 @@ odm/lib/rfsa/adsp/libvdsuperphoto_skel.so
 odm/lib/rfsa/adsp/libworker_pool.so
 
 # Audio
-odm/lib/liblvimfs.so
-odm/lib/liblvimfs_wrapper.so
+odm/lib64/liblvimfs.so
+odm/lib64/liblvimfs_wrapper.so
 
 # Audio firmware
 odm/firmware/tfa98xx.cnt
