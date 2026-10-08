@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# No 32-bit second architecture
+TARGET_BOARD_64_BIT_ONLY := true
+
 # Include the common OEM chipset BoardConfig.
 include device/oneplus/sm8350-common/BoardConfigCommon.mk
 
