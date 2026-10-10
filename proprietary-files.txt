@@ -256,6 +256,9 @@ odm/etc/camera/filters_lut/cyberpunk-neoMilitarism-2.4-final.CUBE.rgb.bin
 odm/etc/camera/filters_lut/default
 odm/etc/camera/filters_lut/delight-P3.CUBE.rgb.bin
 odm/etc/camera/filters_lut/delight-V1.CUBE.rgb.bin
+odm/etc/camera/filters_lut/dolby_preview_3dlut.cube
+odm/etc/camera/filters_lut/dolby_preview_hdr_3dlut.cube
+odm/etc/camera/filters_lut/dolby_preview_sdr_3dlut.cube
 odm/etc/camera/filters_lut/drjw1994.bin
 odm/etc/camera/filters_lut/drjw2010.bin
 odm/etc/camera/filters_lut/f_bin_hideaki
