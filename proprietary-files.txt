@@ -268,7 +268,10 @@ odm/etc/camera/filters_lut/f_fuji_strong.cube.rgb.bin
 odm/etc/camera/filters_lut/f_japan_strong.cube.rgb.bin
 odm/etc/camera/filters_lut/farewell-V7.CUBE.rgb.bin
 odm/etc/camera/filters_lut/fuji-eterna-v2.cube.rgb.bin
+odm/etc/camera/filters_lut/fuji-nc.bin
+odm/etc/camera/filters_lut/fuji-proNegHi.bin
 odm/etc/camera/filters_lut/fuji.cube.rgb.bin
+odm/etc/camera/filters_lut/fuji_cc.bin
 odm/etc/camera/filters_lut/gourmet.cube.rgb.bin
 odm/etc/camera/filters_lut/gt-beach.cube.rgb.bin
 odm/etc/camera/filters_lut/gt-glazed-tile.cube.rgb.bin
